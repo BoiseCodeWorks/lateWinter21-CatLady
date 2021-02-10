@@ -118,6 +118,7 @@ let flights = [{
   }
 }]
 
+// SECTION afternoon challenges from tuesday --------------------------------------------------------------
 
 function flightCost(destination, firstClass) {
   // take in a string
@@ -139,16 +140,10 @@ function flightCost(destination, firstClass) {
         console.log(flights[i].prices.standard)
         return flights[i].prices.standard
       }
-
     }
-    
-
   }
-
-
 }
 
-// SECTION afternoon challenges from tuesday --------------------------------------------------------------
 
 // flightCost("LAX", false)
 // flightCost("SEA", true)
