@@ -125,13 +125,13 @@ function flightCost(destination, firstClass) {
   // find matching flight object
   // return price property based on firstClass == true
   console.log("flight log",destination, firstClass)
+  // this for loop iterates over each object in the flights array.
   for(let i = 0 ; i < flights.length; i++){
-    let ticket = flights[i]
     console.log("ticket#"+i, flights[i])
-
+        // this if statement checks to see if the single flight's 'to' (flight[i].to) property is equal to the requested destination.
     if(destination.toUpperCase() == flights[i].to){
       console.log("ticekt found")
-
+        // once the correct flight is found we check if the the 'firstClass' value passed in is equal to true.  We only check for true because the user might not pass in a value at all as hinted by the wording of the problem.
       if(firstClass == true){
         console.log(flights[i].prices.firstClass)
         return flights[i].prices.firstClass
